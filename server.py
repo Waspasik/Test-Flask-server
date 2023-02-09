@@ -23,7 +23,7 @@ def create_user():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        collection.insert_one({'username': username, 'password': password})
+        collection.insert_one({'username': username, 'password': password})    # write data to database
         return redirect('/get-users')
     else:
         return render_template('create-user.html')
@@ -32,7 +32,7 @@ def create_user():
 @app.route('/get-users', methods=['GET'])
 def show_users():
     users = [user for user in collection.find()]
-    return json.loads(dumps(users, indent=3, ensure_ascii=False))
+    return json.loads(dumps(users, indent=3, ensure_ascii=False))    # return users from database in JSON
 
 
 if __name__ == '__main__':
