@@ -12,3 +12,5 @@
 - press button 'Create'.
 
 #### To get a JSON with created users you must click on the link 'Show users'.
+
+#### Also in this repository there is a JSON file with the result of the test carried out through Postman.
