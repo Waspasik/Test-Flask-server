@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create user
+{% endblock %}
+
+{% block body %}
+<main class="form-signin w-100 m-auto">
+    <form method="post">
+        <h1 class="h3 mb-3 fw-normal">User registration</h1>
+        <div class="form-floating" bis_skin_checked="1">
+            <input type="username" name="username" class="form-control" id="username" placeholder="Username">
+            <label for="floatingInput">Create Username</label>
+        </div>
+        <div class="form-floating" bis_skin_checked="1">
+            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+            <label for="floatingPassword">Create Password</label>
+        </div>
+        <input type="submit" class="btn btn-success" value="Create">
+    </form>
+</main>
+{% endblock %}

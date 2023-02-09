@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/product.css') }}">
+  <title>{% block title %}Main page{% endblock %}</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom" bis_skin_checked="1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="/">Main page</a>
+      <a class="py-2 d-none d-md-inline-block" href="/create-user">Create user</a>
+      <a class="py-2 d-none d-md-inline-block" href="/get-users">Show users</a>
+    </nav>
+  </div>
+  {% block body %}{% endblock %}
+</body>
+
+</html>
