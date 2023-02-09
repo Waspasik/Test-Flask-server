@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "8ac1bffd-fdf3-4e8e-928b-b89acc161a3a",
+		"name": "Test Flask server (test task)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20470003"
+	},
+	"item": [
+		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/get-users"
+			},
+			"response": [
+				{
+					"name": "Get users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:5000/get-users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 19:29:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": {\n            \"$oid\": \"63e3f1d9d204aaf55f9fc638\"\n        },\n        \"password\": \"Guts666\",\n        \"username\": \"Berserker\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
